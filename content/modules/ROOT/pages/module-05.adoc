@@ -1,0 +1,74 @@
+From the *Root tab* confirm that *root* is the initial owner of the file
+*tasks.txt*:
+
+[source,bash]
+----
+ls -l tasks.txt
+----
+
+[source,bash]
+----
+-rwxr-x---. 1 root root 117 Jun  2 23:01 tasks.txt
+----
+
+The third and fourth column of this output are the user and group that
+own the file. Right now, *root* is the owner in both cases.
+
+.thirdfourth
+image::../assets/thirdandfourthcolumn.png[thirdfourth]
+
+Switch to the guest terminal in the bottom pane and attempt to read the
+file:
+
+[source,bash]
+----
+cat tasks.txt
+----
+
+[source,bash]
+----
+cat: tasks.txt: Permission denied
+----
+
+This read operation is denied, as *guest* does not have read permission.
+
+Return to the *Root tab*.
+
+Change the user that owns *tasks.txt* to *guest*:
+
+[source,bash]
+----
+chown guest tasks.txt
+----
+
+Return to the *Guest tab*.
+
+Run the following command.
+
+[source,bash]
+----
+ls -l tasks.txt
+----
+
+[source,bash]
+----
+-rwxr-x---. 1 guest root 117 Jun  2 23:01 tasks.txt
+----
+
+Now that *guest* owns the file instead of *root*, this user has
+permission to read the file without reconfiguring the access modes.
+
+[source,bash]
+----
+cat tasks.txt
+----
+
+[source,bash]
+----
+1. Finish this Permissions Lab
+2. Do the Networking Configuration Basics Lab
+3. Listen to the latest episode of RHEL Presents
+----
+
+The fourth column of the `+ls -l+` output is the group which owns the
+file. The next step will walk you through changing group ownership.
