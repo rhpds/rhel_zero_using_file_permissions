@@ -19,6 +19,11 @@ antora:
     - name: module-07
       label: Module 7
 tabs:
-  - name: terminal
+
+  - name: ">_ Root"
     port: 443
     path: /wetty
+
+  - name: ">_ Guest"
+    port: 443
+    path: /tty2
