@@ -35,7 +35,7 @@ Verify that you do not have permission to execute the status script as
 ----
 
 .denied!
-image::absolutepermissionchangedenied.png[denied!]
+image::../assets/images/absolutepermissionchangedenied.png[denied!]
 
 
 However, if you try to read this file, you will see you do have read
@@ -47,7 +47,7 @@ cat status.sh
 ----
 
 .readable
-image::readable.png[readable]
+image::../assets/images/readable.png[readable]
 
 ____
 _NOTE:_ You can use `+vi+` or any other write command to verify that you
