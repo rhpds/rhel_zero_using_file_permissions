@@ -15,7 +15,7 @@ by copying and pasting the following into the terminal window.
 ----
 
 .status script run
-image::../assets/images/statusscriptrun.png[status script run]
+image::statusscriptrun.png[status script run]
 
 Let’s focus on the permissions of `+status.sh+`.
 
@@ -37,7 +37,7 @@ cd /srv
 ----
 
 .srv guest
-image::../assets/images/srvguest.png[srv guest]
+image::srvguest.png[srv guest]
 
 Try executing the status script as *guest*. Since the guest account is
 not the user owner of the file and is not part of any owner groups, you
@@ -49,7 +49,7 @@ are unable to execute this script from this user account.
 ----
 
 .denied!
-image::../assets/images/permissiondeniedasguest.png[denied!]
+image::permissiondeniedasguest.png[denied!]
 
 Now that you know how files behave differently when operated on by
 different user accounts, the next steps will show you how to customize

@@ -15,7 +15,7 @@ The third and fourth column of this output are the user and group that
 own the file. Right now, *root* is the owner in both cases.
 
 .thirdfourth
-image::../assets/images/thirdandfourthcolumn.png[thirdfourth]
+image::thirdandfourthcolumn.png[thirdfourth]
 
 Switch to the guest terminal in the bottom pane and attempt to read the
 file:
