@@ -15,7 +15,7 @@ by copying and pasting the following into the terminal window.
 ----
 
 .status script run
-image::statusscriptrun.png[status script run]
+image::statusscriptrun-zt.png[status script run]
 
 Let’s focus on the permissions of `+status.sh+`.
 
@@ -29,17 +29,17 @@ execute but cannot write to this file. See the image below.
 Finally, all other users have no permissions, *—*, so they are unable to
 read, write, or execute this file.
 
-Switch to the `+Guest+` tab and traverse into the `+/srv+` directory.
+Switch to the `+>_rhel+` tab and traverse into the `+/srv+` directory.
 
 [source,bash]
 ----
 cd /srv
 ----
 
-.srv guest
-image::srvguest.png[srv guest]
+.srv rhel
+image::srvguest-zt.png[srv rhel]
 
-Try executing the status script as *guest*. Since the guest account is
+Try executing the status script as *rhel*. Since the rhel account is
 not the user owner of the file and is not part of any owner groups, you
 are unable to execute this script from this user account.
 
@@ -49,7 +49,7 @@ are unable to execute this script from this user account.
 ----
 
 .denied!
-image::permissiondeniedasguest.png[denied!]
+image::permissiondeniedasguest-zt.png[denied!]
 
 Now that you know how files behave differently when operated on by
 different user accounts, the next steps will show you how to customize

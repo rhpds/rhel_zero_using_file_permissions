@@ -15,9 +15,9 @@ The third and fourth column of this output are the user and group that
 own the file. Right now, *root* is the owner in both cases.
 
 .thirdfourth
-image::thirdandfourthcolumn.png[thirdfourth]
+image::thirdandfourthcolumn-zt.png[thirdfourth]
 
-Switch to the guest terminal in the bottom pane and attempt to read the
+Switch to the rhel terminal in the bottom pane and attempt to read the
 file:
 
 [source,bash]
@@ -30,18 +30,18 @@ cat tasks.txt
 cat: tasks.txt: Permission denied
 ----
 
-This read operation is denied, as *guest* does not have read permission.
+This read operation is denied, as *rhel* does not have read permission.
 
 Return to the *Root tab*.
 
-Change the user that owns *tasks.txt* to *guest*:
+Change the user that owns *tasks.txt* to *rhel*:
 
 [source,bash]
 ----
-chown guest tasks.txt
+chown rhel tasks.txt
 ----
 
-Return to the *Guest tab*.
+Return to the *rhel tab*.
 
 Run the following command.
 
@@ -52,10 +52,10 @@ ls -l tasks.txt
 
 [source,bash]
 ----
--rwxr-x---. 1 guest root 117 Jun  2 23:01 tasks.txt
+-rwxr-x---. 1 rhel root 117 Jun  2 23:01 tasks.txt
 ----
 
-Now that *guest* owns the file instead of *root*, this user has
+Now that *rhel* owns the file instead of *root*, this user has
 permission to read the file without reconfiguring the access modes.
 
 [source,bash]

@@ -9,7 +9,7 @@ There are two tabs in the web interface. Click on the tab labelled
 `+Root+`.
 
 .root tab
-image::roottab.png[root tab]
+image::root-tab-zt.png[root tab]
 
 For this lab, several files have been created for you to work with in
 the `+/srv+` directory. Use the `+cd+` command to navigate there:
@@ -32,7 +32,7 @@ ls -l
 ----
 
 .ls output
-image::ls-output.png[ls output]
+image::ls-output-zt.png[ls output]
 
 Let’s look a bit closer at the permissions.
 
