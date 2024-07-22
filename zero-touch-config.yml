@@ -5,19 +5,21 @@ antora:
   dir: www
   modules:
     - name: index
-      label: Module 1
+      label: What are file permissions?
     - name: module-02
-      label: Module 2
+      label: Interacting with a file from different user accounts
     - name: module-03
-      label: Module 3
+      label: The chmod Command
     - name: module-04
-      label: Module 4
+      label: Changing permissions (symbolic)
     - name: module-05
-      label: Module 5
+      label: Changing permissions (absolute)
     - name: module-06
-      label: Module 6
+      label: Changing file ownership
     - name: module-07
-      label: Module 7
+      label: Changing Group Ownership
+    - name: module-08
+      label: Auditing permissions
 tabs:
   - name: ">_ root"
     port: 443

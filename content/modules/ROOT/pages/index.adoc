@@ -1,3 +1,5 @@
+=== What are file permissions?
+
 It is important to properly assign permissions to files and directories
 created on a shared system so that files are not accidentally (or
 maliciously) tampered with, destroyed, or executed. The next section
@@ -14,7 +16,7 @@ image::root-tab-zt.png[root tab]
 For this lab, several files have been created for you to work with in
 the `+/srv+` directory. Use the `+cd+` command to navigate there:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 cd /srv
 ----
@@ -26,7 +28,7 @@ Take a look at the contents of the current directory. Use the long
 listing option (`+-l+`) to display information about permissions for
 each item.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -l
 ----
