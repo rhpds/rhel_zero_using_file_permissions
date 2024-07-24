@@ -12,7 +12,7 @@ Change the group permission of the *tasks.txt* file:
 
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
-chown :team tasks.txt
+chgrp :team tasks.txt
 ----
 
 Verify the change using `+ls -l+`:

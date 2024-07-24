@@ -86,7 +86,7 @@ cat proprietary/contract01.txt
 cat: proprietary/contract01.txt: Permission denied
 ----
 
-----
+____
 _NOTE:_ You may be tempted to use `+chmod+` with the recursive option
 (`+-R+`) to make this change instead of using `+find+`. The `+chmod -R+`
 command modifies subdirectories as well as files, however. Since you are
@@ -95,7 +95,7 @@ a situation where you could not `+cd+` into any of the subdirectories
 that you just modified. This would also prevent you from running any
 recursive operations to fix this issue, and you would have to manually
 change the permissions on each subdirectory individually.
-----
+____
 
 It is very important to double check your work when using the `+find+`
 to execute `+chmod+`, as running this command on the wrong directory

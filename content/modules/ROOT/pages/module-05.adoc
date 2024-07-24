@@ -56,7 +56,7 @@ cat status.sh
 ----
 
 .readable
-image::readable.png-zt[readable]
+image::readable-zt.png[readable]
 
 ____
 _NOTE:_ You can use `+vi+` or any other write command to verify that you
@@ -67,6 +67,6 @@ Many users default to absolute permissions because of how much quicker
 they are to type. If you are still unsure exactly what these commands
 are doing, please check out the "`How do I manage permissions?`" section
 of https://www.redhat.com/sysadmin/manage-permissions[this Enable
-Sysadmin article] to learn more.
+Sysadmin article^] to learn more.
 
 The next step will walk you through changing which user owns a file.
