@@ -3,7 +3,7 @@
 Recall from the previous step that *status.sh* has the following
 permissions:
 
-[source,bash]
+[source,text]
 ----
 -rwxr-x---
 ----
@@ -17,7 +17,7 @@ by copying and pasting the following into the terminal window.
 ----
 
 .status script run
-image::statusscriptrun-zt.png[status script run]
+image::../assets/images/statusscriptrun-zt.png[status script run]
 
 Let’s focus on the permissions of `+status.sh+`.
 
@@ -39,7 +39,7 @@ cd /srv
 ----
 
 .srv rhel
-image::srvguest-zt.png[srv rhel]
+image::../assets/images/srvguest-zt.png[srv rhel]
 
 Try executing the status script as *rhel*. Since the rhel account is
 not the user owner of the file and is not part of any owner groups, you
@@ -51,7 +51,7 @@ are unable to execute this script from this user account.
 ----
 
 .denied!
-image::permissiondeniedasguest-zt.png[denied!]
+image::../assets/images/permissiondeniedasguest-zt.png[denied!]
 
 Now that you know how files behave differently when operated on by
 different user accounts, the next steps will show you how to customize

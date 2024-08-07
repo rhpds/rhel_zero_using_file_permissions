@@ -12,7 +12,7 @@ meaning to the symbolic mode breakdown, they are just more compact and therefore
 Here is an example of how the two modes relate from Boolean World:
 
 .symbolicandnumeric
-image::symbolicandnumeric.png[Permission Breakdown]
+image::../assets/images/symbolicandnumeric.png[Permission Breakdown]
 
 :NOTE: This image refers to absolute mode as numeric mode. These two terms are interchangeable and you will commonly see both.
 

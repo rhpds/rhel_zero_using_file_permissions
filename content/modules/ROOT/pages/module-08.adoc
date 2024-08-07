@@ -16,7 +16,7 @@ find -perm 755
 
 This returns only a hidden OS file:
 
-[source,bash]
+[source,text]
 ----
 .
 ----
@@ -37,7 +37,7 @@ permission greater than or equal to the one you are searching for.
 find -perm -755
 ----
 
-[source,bash]
+[source,text]
 ----
 .
 ./proprietary/contract01.txt
@@ -81,7 +81,7 @@ Run this command to check if the `+rhel+` account can read the file
 cat proprietary/contract01.txt
 ----
 
-[source,bash]
+[source,text]
 ----
 cat: proprietary/contract01.txt: Permission denied
 ----

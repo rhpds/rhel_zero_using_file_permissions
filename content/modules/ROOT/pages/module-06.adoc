@@ -10,7 +10,7 @@ From the *Root tab* confirm that *root* is the initial owner of the file
 ls -l tasks.txt
 ----
 
-[source,bash]
+[source,text]
 ----
 -rwxr-x---. 1 root root 117 Jun  2 23:01 tasks.txt
 ----
@@ -19,7 +19,7 @@ The third and fourth column of this output are the user and group that
 own the file. Right now, *root* is the owner in both cases.
 
 .thirdfourth
-image::thirdandfourthcolumn-zt.png[thirdfourth]
+image::../assets/images/thirdandfourthcolumn-zt.png[thirdfourth]
 
 Switch to the rhel terminal in the bottom pane and attempt to read the
 file:
@@ -29,7 +29,7 @@ file:
 cat tasks.txt
 ----
 
-[source,bash,subs="+macros,+attributes",role=execute]
+[source,text]
 ----
 cat: tasks.txt: Permission denied
 ----
@@ -54,7 +54,7 @@ Run the following command.
 ls -l tasks.txt
 ----
 
-[source,bash]
+[source,text]
 ----
 -rwxr-x---. 1 rhel root 117 Jun  2 23:01 tasks.txt
 ----
@@ -67,7 +67,7 @@ permission to read the file without reconfiguring the access modes.
 cat tasks.txt
 ----
 
-[source,bash]
+[source,text]
 ----
 1. Finish this Permissions Lab
 2. Do the Networking Configuration Basics Lab

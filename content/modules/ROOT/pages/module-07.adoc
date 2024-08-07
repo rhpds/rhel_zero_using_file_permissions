@@ -1,6 +1,6 @@
 === Changing Group Ownership
 
-Changing group ownership can be much more efficient than manually assigning owners, 
+Changing group ownership can be much more efficient than manually assigning owners,
 when there are many users that should have the same access to a file.
 
 Group ownership can be changed with the `+chgrp+` command by adding a
@@ -22,7 +22,7 @@ Verify the change using `+ls -l+`:
 ls -l tasks.txt
 ----
 
-[source,bash]
+[source,text]
 ----
 -rwxr-x---. 1 rhel team 117 Jun  2 23:01 tasks.txt
 ----
