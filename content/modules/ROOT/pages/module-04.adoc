@@ -31,7 +31,7 @@ ls -l status.sh
 image::../assets/images/changedpermissionstatussh-zt.png[changed]
 
 ____
-_NOTE:_ Just as `+o+rx+` added read and execute permissions for others,
+NOTE: Just as `+o+rx+` added read and execute permissions for others,
 `+chmod+` accepts the `+-+` argument to take away permissions. For
 example, `+o-w+` would remove write privileges from others while leaving
 the read and execute values untouched. The `+=+` argument can be used to
