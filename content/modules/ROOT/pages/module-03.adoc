@@ -14,7 +14,7 @@ Here is an example of how the two modes relate from Boolean World:
 .symbolicandnumeric
 image::../assets/images/symbolicandnumeric.png[Permission Breakdown]
 
-:NOTE: This image refers to absolute mode as numeric mode. These two terms are interchangeable and you will commonly see both.
+NOTE: This image refers to absolute mode as numeric mode. These two terms are interchangeable and you will commonly see both.
 
 The crucial takeaway is that each character in a symbolic permission can be converted to a binary number, 1 if the user has that permission and 0 if the user does not. These three binary numbers become a single octal digit, and three such octal digits compose an absolute representation of the file's permissions.
 

@@ -21,7 +21,6 @@ This returns only a hidden OS file:
 .
 ----
 
-
 NOTE: Recall from the previous step that *755* corresponds to read,
 write, and execute access for the owner, and read and execute access for
 everyone else.
@@ -86,7 +85,6 @@ cat proprietary/contract01.txt
 cat: proprietary/contract01.txt: Permission denied
 ----
 
-
 NOTE: You may be tempted to use `+chmod+` with the recursive option
 (`+-R+`) to make this change instead of using `+find+`. The `+chmod -R+`
 command modifies subdirectories as well as files, however. Since you are
@@ -103,5 +101,5 @@ could lock users out of all of their files.
 
 This step is based on information from the
 https://www.redhat.com/sysadmin/audit-permissions-find[Enable Sysadmin
-article on the topic^]. Head there for more information on increasing the
+article on the topic^^]. Head there for more information on increasing the
 specificity of what `+find+` returns.
