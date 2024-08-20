@@ -30,13 +30,13 @@ ls -l status.sh
 .changed
 image::../assets/images/changedpermissionstatussh-zt.png[changed]
 
-____
+
 NOTE: Just as `+o+rx+` added read and execute permissions for others,
 `+chmod+` accepts the `+-+` argument to take away permissions. For
 example, `+o-w+` would remove write privileges from others while leaving
 the read and execute values untouched. The `+=+` argument can be used to
 explicitly set all permissions symbolically.
-____
+
 
 Now the *rhel* user will be able to read and execute *status.sh*.
 Switch back to the *rhel tab* and re-run the status script:
