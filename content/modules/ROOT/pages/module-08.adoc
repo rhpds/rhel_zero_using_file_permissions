@@ -101,5 +101,5 @@ could lock users out of all of their files.
 
 This step is based on information from the
 https://www.redhat.com/sysadmin/audit-permissions-find[Enable Sysadmin
-article on the topic^^]. Head there for more information on increasing the
+article on the topic^]. Head there for more information on increasing the
 specificity of what `+find+` returns.

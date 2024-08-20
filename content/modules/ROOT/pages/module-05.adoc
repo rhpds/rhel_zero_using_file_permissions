@@ -59,8 +59,6 @@ cat status.sh
 image::../assets/images/readable-zt.png[readable]
 
 NOTE: You can use `+vi+` or any other write command to verify that you
-
-NOTE: You can use `+vi+` or any other write command to verify that you
 do not have write access as *rhel* if you wish to verify this as well.
 
 Many users default to absolute permissions because of how much quicker
