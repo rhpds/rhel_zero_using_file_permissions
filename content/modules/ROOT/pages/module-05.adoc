@@ -5,7 +5,7 @@ Now your next goal is to modify the permissions on status.sh to keep full access
 The number you would use to do this with chmod is 774. The image below explains how the absolute permission of 774 relates to the access mode string that is output by ls -l.
 
 .chmod 774
-image::assets/images/chmod774.png[chmod 774]
+image::chmod774.png[chmod 774]
 
 The owner user and owner group will have full permissions, but others
 will only be able to read the file.
@@ -44,7 +44,7 @@ Verify that you do not have permission to execute the status script as
 ----
 
 .denied!
-image::assets/images/absolutepermissionchangedenied-zt.png[denied!]
+image::absolutepermissionchangedenied-zt.png[denied!]
 
 
 However, if you try to read this file, you will see you do have read
@@ -56,7 +56,7 @@ cat status.sh
 ----
 
 .readable
-image::assets/images/readable-zt.png[readable]
+image::readable-zt.png[readable]
 
 NOTE: You can use `+vi+` or any other write command to verify that you
 do not have write access as *rhel* if you wish to verify this as well.
