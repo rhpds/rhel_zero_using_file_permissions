@@ -3,7 +3,7 @@
 The chmod command is how you modify the permissions associated with files and directories.
 The chmod command has two different ways to modify permissions: symbolic and absolute.
 
-Symbolic permissions have the same format as the access mode output of ls -l.
+Symbolic permissions have the same format as the access mode output of `ls -l`.
 In this mode, you use the characters r, w, and x to set the read, write, and execute permissions.
 
 The other mode, absolute, instead uses a series of three numbers to correspond to

@@ -83,5 +83,5 @@ cat tasks.txt
 3. Listen to the latest episode of RHEL Presents
 ----
 
-The fourth column of the `+ls -l+` output is the group which owns the
+The fourth column of the `*ls -l*` output is the group which owns the
 file. The next step will walk you through changing group ownership.

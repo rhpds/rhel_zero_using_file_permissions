@@ -12,7 +12,7 @@ will only be able to read the file.
 
 Return to *Root tab*.
 
-Use `+chmod+` to modify the permissions on *status.sh* as previously
+Use `*chmod*` to modify the permissions on *status.sh* as previously
 discussed.
 
 .Command
@@ -63,7 +63,7 @@ cat status.sh
 .readable
 image::readable-zt.png[readable]
 
-NOTE: You can use `+vi+` or any other write command to verify that you
+NOTE: You can use `*vi*` or any other write command to verify that you
 do not have write access as *rhel* if you wish to verify this as well.
 
 Many users default to absolute permissions because of how much quicker

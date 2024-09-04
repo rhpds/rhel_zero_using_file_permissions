@@ -21,7 +21,7 @@ by copying and pasting the following into the terminal window.
 .status script run
 image::statusscriptrun-zt.png[status script run]
 
-Let’s focus on the permissions of `+status.sh+`.
+Let’s focus on the permissions of `*status.sh*`.
 
 The first three letters of the access mode show that the owner of the
 file has full permissions, *rwx*, so the owner can read, write, and
@@ -33,7 +33,7 @@ execute but cannot write to this file. See the image below.
 Finally, all other users have no permissions, *—*, so they are unable to
 read, write, or execute this file.
 
-Switch to the `+>_rhel+` tab and traverse into the `+/srv+` directory.
+Switch to the `*>_rhel*` tab and traverse into the `*/srv*` directory.
 
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
