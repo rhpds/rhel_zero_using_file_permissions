@@ -5,11 +5,13 @@ Sometimes it is useful to change who owns a file so that permissions can align w
 From the *Root tab* confirm that *root* is the initial owner of the file
 *tasks.txt*:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -l tasks.txt
 ----
 
+.Output
 [source,text]
 ----
 -rwxr-x---. 1 root root 117 Jun  2 23:01 tasks.txt
@@ -24,11 +26,13 @@ image::thirdandfourthcolumn-zt.png[thirdfourth]
 Switch to the rhel terminal in the bottom pane and attempt to read the
 file:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat tasks.txt
 ----
 
+.Output
 [source,text]
 ----
 cat: tasks.txt: Permission denied
@@ -40,6 +44,7 @@ Return to the *Root tab*.
 
 Change the user that owns *tasks.txt* to *rhel*:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 chown rhel tasks.txt
@@ -49,11 +54,13 @@ Return to the *rhel tab*.
 
 Run the following command.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -l tasks.txt
 ----
 
+.Output
 [source,text]
 ----
 -rwxr-x---. 1 rhel root 117 Jun  2 23:01 tasks.txt
@@ -62,11 +69,13 @@ ls -l tasks.txt
 Now that *rhel* owns the file instead of *root*, this user has
 permission to read the file without reconfiguring the access modes.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat tasks.txt
 ----
 
+.Output
 [source,text]
 ----
 1. Finish this Permissions Lab

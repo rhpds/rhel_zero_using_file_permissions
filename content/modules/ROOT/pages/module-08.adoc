@@ -9,6 +9,7 @@ path, which means it will start looking in the current directory.
 First, from the *Root tab*, check for files that have the permission
 level *755*.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 find -perm 755
@@ -16,6 +17,7 @@ find -perm 755
 
 This returns only a hidden OS file:
 
+.Output
 [source,text]
 ----
 .
@@ -31,11 +33,13 @@ above a certain level could pose a security issue. Adding a dash before
 the permission tells the `+find+` command to return anything with a
 permission greater than or equal to the one you are searching for.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 find -perm -755
 ----
 
+.Output
 [source,text]
 ----
 .
@@ -62,6 +66,7 @@ targets files, so the directory permissions will remain unchanged. The
 `+chmod+` command separately on each file that matches the search
 criteria.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 find -perm -755 -type f -exec chmod 600 {} \;
@@ -75,11 +80,13 @@ Switch to the *rhel tab*.
 Run this command to check if the `+rhel+` account can read the file
 `+contract01.txt+`:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat proprietary/contract01.txt
 ----
 
+.Output
 [source,text]
 ----
 cat: proprietary/contract01.txt: Permission denied

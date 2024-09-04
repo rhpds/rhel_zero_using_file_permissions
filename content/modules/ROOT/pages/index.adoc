@@ -16,6 +16,7 @@ image::root-tab-zt.png[root tab]
 For this lab, several files have been created for you to work with in
 the `+/srv+` directory. Use the `+cd+` command to navigate there:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cd /srv
@@ -28,6 +29,7 @@ Take a look at the contents of the current directory. Use the long
 listing option (`+-l+`) to display information about permissions for
 each item.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -l
@@ -38,6 +40,7 @@ image::ls-output-zt.png[ls output]
 
 Let’s look a bit closer at the permissions.
 
+.Output
 [source,text]
 ----
 drw-r-----. 2 root root  94 Jun  2 21:08 proprietary

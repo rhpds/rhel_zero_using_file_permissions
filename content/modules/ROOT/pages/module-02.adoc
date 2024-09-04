@@ -3,6 +3,7 @@
 Recall from the previous step that *status.sh* has the following
 permissions:
 
+.Output
 [source,text]
 ----
 -rwxr-x---
@@ -11,6 +12,7 @@ permissions:
 Therefore, *root* has permission to execute this script. Run the script
 by copying and pasting the following into the terminal window.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ./status.sh
@@ -33,6 +35,7 @@ read, write, or execute this file.
 
 Switch to the `+>_rhel+` tab and traverse into the `+/srv+` directory.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cd /srv
@@ -45,6 +48,7 @@ Try executing the status script as *rhel*. Since the rhel account is
 not the user owner of the file and is not part of any owner groups, you
 are unable to execute this script from this user account.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ./status.sh

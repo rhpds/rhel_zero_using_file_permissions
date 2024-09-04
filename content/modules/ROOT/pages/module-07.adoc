@@ -10,6 +10,7 @@ Return to the *Root tab*.
 
 Change the group permission of the *tasks.txt* file:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 chgrp team tasks.txt
@@ -17,11 +18,13 @@ chgrp team tasks.txt
 
 Verify the change using `+ls -l+`:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -l tasks.txt
 ----
 
+.Output
 [source,text]
 ----
 -rwxr-x---. 1 rhel team 117 Jun  2 23:01 tasks.txt
