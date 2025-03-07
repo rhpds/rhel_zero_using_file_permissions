@@ -2,7 +2,7 @@
 
 Sometimes it is useful to change who owns a file so that permissions can align with the purpose of the file. The chown command can do this very easily. Just specify the new owner and the file you would like to change.
 
-From the *Root tab* confirm that *root* is the initial owner of the file
+From the *>_ root* tab confirm that *root* is the initial owner of the file
 *tasks.txt*:
 
 .Command
@@ -14,7 +14,7 @@ ls -l tasks.txt
 .Output
 [source,text]
 ----
--rwxr-x---. 1 root root 117 Jun  2 23:01 tasks.txt
+-rwxr-x---. 1 root root 128 Mar  5 22:00 tasks.txt
 ----
 
 The third and fourth column of this output are the user and group that
@@ -23,7 +23,7 @@ own the file. Right now, *root* is the owner in both cases.
 .thirdfourth
 image::thirdandfourthcolumn-zt.png[thirdfourth]
 
-Switch to the rhel terminal in the bottom pane and attempt to read the
+Switch to the *>_ rhel* terminal in the bottom pane and attempt to read the
 file:
 
 .Command
@@ -40,7 +40,7 @@ cat: tasks.txt: Permission denied
 
 This read operation is denied, as *rhel* does not have read permission.
 
-Return to the *Root tab*.
+Return to the *>_ root* tab.
 
 Change the user that owns *tasks.txt* to *rhel*:
 
@@ -50,7 +50,9 @@ Change the user that owns *tasks.txt* to *rhel*:
 chown rhel tasks.txt
 ----
 
-Return to the *rhel tab*.
+This command has no expected output.
+
+Return to the *>_rhel* tab.
 
 Run the following command.
 

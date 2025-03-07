@@ -8,10 +8,10 @@ shows you how to view the permissions of files in an example directory.
 == Displaying files and their permissions
 
 There are two tabs in the web interface. Click on the tab labelled
-`*root*`.
+`*>_ root*`.
 
 .root tab
-image::root-tab-zt.png[root tab]
+image::root-tab-zt-2.png[root tab]
 
 For this lab, several files have been created for you to work with in
 the `*/srv*` directory. Use the `*cd*` command to navigate there:
@@ -21,6 +21,8 @@ the `*/srv*` directory. Use the `*cd*` command to navigate there:
 ----
 cd /srv
 ----
+
+This command has no expected output.
 
 The command `*ls -l*` can be used to look at the permissions associated
 with each file in the directory. The output for this can be cryptic at

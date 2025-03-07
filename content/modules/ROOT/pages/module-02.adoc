@@ -18,8 +18,11 @@ by copying and pasting the following into the terminal window.
 ./status.sh
 ----
 
-.status script run
-image::statusscriptrun-zt.png[status script run]
+.Output
+[source,text]
+----
+status.sh successfully executed by root
+----
 
 Let’s focus on the permissions of `*status.sh*`.
 
@@ -41,8 +44,7 @@ Switch to the `*>_rhel*` tab and traverse into the `*/srv*` directory.
 cd /srv
 ----
 
-.srv rhel
-image::srvguest-zt.png[srv rhel]
+This command has no expected output.
 
 Try executing the status script as *rhel*. Since the rhel account is
 not the user owner of the file and is not part of any owner groups, you
@@ -54,8 +56,11 @@ are unable to execute this script from this user account.
 ./status.sh
 ----
 
-.denied!
-image::permissiondeniedasguest-zt.png[denied!]
+.Output
+[source,text]
+----
+-bash: ./status.sh: Permission denied
+----
 
 Now that you know how files behave differently when operated on by
 different user accounts, the next steps will show you how to customize

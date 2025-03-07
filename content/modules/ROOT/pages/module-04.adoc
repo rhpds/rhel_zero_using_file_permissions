@@ -10,7 +10,7 @@ case, it will give others read and execute access, but will not change
 the value of write access for the group. Return to the root terminal to
 execute this command.
 
-Go back to the *Root tab*.
+Go back to the *>_ root* tab.
 
 Now change the permission of `*status.sh*`.
 
@@ -19,6 +19,8 @@ Now change the permission of `*status.sh*`.
 ----
 chmod o+rx status.sh
 ----
+
+This command has no expected output.
 
 Verify that this command succeeded using `*ls -l*`, specifying that you
 want to only look at *status.sh*.
@@ -29,8 +31,11 @@ want to only look at *status.sh*.
 ls -l status.sh
 ----
 
-.changed
-image::changedpermissionstatussh-zt.png[changed]
+.Output
+[source,text]
+----
+-rwxr-xr-x. 1 root root 68 Mar  5 22:00 status.sh
+----
 
 NOTE: Just as `*o+rx*` added read and execute permissions for others,
 `*chmod*` accepts the `*-*` argument to take away permissions. For
@@ -40,7 +45,7 @@ explicitly set all permissions symbolically.
 
 
 Now the *rhel* user will be able to read and execute *status.sh*.
-Switch back to the *rhel tab* and re-run the status script:
+Switch back to the *>_ rhel* tab and re-run the status script:
 
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
@@ -48,8 +53,11 @@ Switch back to the *rhel tab* and re-run the status script:
 ./status.sh
 ----
 
-.success
-image::successfullyexecutedasguest-zt.png[success]
+.Output
+[source,text]
+----
+status.sh successfully executed by rhel
+----
 
 Since you added read and execute permissions, you can do more than just
 execute this file as *rhel*. Use the `*cat*` command to verify that you
@@ -61,8 +69,13 @@ can read this file as *rhel*.
 cat status.sh
 ----
 
-.cat
-image::catstatussh-zt.png[cat]
+.Output
+[source,text]
+----
+#! /bin/bash
+echo -n "status.sh successfully executed by "
+whoami
+----
 
 Symbolic mode is the more expanded permissions format which can appeal
 to newer users. However, the absolute mode described in the next step
