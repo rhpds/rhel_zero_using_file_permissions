@@ -77,7 +77,7 @@ This command has no expected output.
 To verify that access has been removed, try to read one of the files as
 the rhel account.
 
-Switch to the `*rhel tab*`.
+Switch to the *>_ rhel* tab.
 
 Run this command to check if the `*rhel*` account can read the file
 `*contract01.txt*`:
