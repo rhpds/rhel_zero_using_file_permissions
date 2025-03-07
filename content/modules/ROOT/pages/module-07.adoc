@@ -16,6 +16,8 @@ Change the group permission of the *tasks.txt* file:
 chgrp team tasks.txt
 ----
 
+This command has no expected output.
+
 Verify the change using `*ls -l*`:
 
 .Command
